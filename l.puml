@@ -1,0 +1,123 @@
+@startuml
+annotation java.lang.Override
+annotation javafx.fxml.FXML
+class application.AESEncryption
+class application.ColoredCell
+class application.DatabaseHandler
+class application.ListInterface
+class application.Request
+class application.User
+class application.Yaccount
+class controller.AdminController
+class controller.BasicController
+class controller.LoginController
+class controller.RegisterController
+class java.io.UnsupportedEncodingException
+class java.lang.reflect.Field
+class java.net.URL
+class java.nio.charset.StandardCharsets
+class java.security.InvalidKeyException
+class java.security.MessageDigest
+class java.security.NoSuchAlgorithmException
+class java.sql.Date
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.time.LocalDate
+class java.util.Arrays
+class java.util.Base64
+class java.util.HashMap
+class java.util.LinkedList
+class java.util.Map
+class java.util.Queue
+class java.util.ResourceBundle
+class java.util.Stack
+class javafx.application.Application
+class javafx.beans.value.ChangeListener
+class javafx.beans.value.ObservableValue
+class javafx.event.ActionEvent
+class javafx.fxml.FXMLLoader
+class javafx.scene.Parent
+class javafx.scene.Scene
+class javafx.scene.control.ListCell
+class javafx.scene.control.ListView
+class javafx.stage.Stage
+class javafx.util.Callback
+class javax.crypto.BadPaddingException
+class javax.crypto.Cipher
+class javax.crypto.IllegalBlockSizeException
+class javax.crypto.NoSuchPaddingException
+class javax.crypto.spec.SecretKeySpec
+interface javafx.fxml.Initializable
+application.AESEncryption ..> java.io.UnsupportedEncodingException
+application.AESEncryption ..> java.nio.charset.StandardCharsets
+application.AESEncryption ..> java.security.InvalidKeyException
+application.AESEncryption ..> java.security.MessageDigest
+application.AESEncryption ..> java.security.NoSuchAlgorithmException
+application.AESEncryption ..> java.util.Arrays
+application.AESEncryption ..> java.util.Base64
+application.AESEncryption ..> javax.crypto.BadPaddingException
+application.AESEncryption ..> javax.crypto.Cipher
+application.AESEncryption ..> javax.crypto.IllegalBlockSizeException
+application.AESEncryption ..> javax.crypto.NoSuchPaddingException
+application.AESEncryption ..> javax.crypto.spec.SecretKeySpec
+application.ColoredCell ..> java.lang.Override
+application.ColoredCell ..> java.util.LinkedList
+application.ColoredCell --|> javafx.scene.control.ListCell
+application.ColoredCell ..> javafx.scene.control.ListView
+application.DatabaseHandler ..> java.lang.reflect.Field
+application.ListInterface ..> java.lang.Override
+application.ListInterface ..> java.util.LinkedList
+application.ListInterface ..> java.util.Queue
+application.ListInterface ..> java.util.Stack
+application.ListInterface ..> javafx.beans.value.ChangeListener
+application.ListInterface ..> javafx.beans.value.ObservableValue
+application.ListInterface ..> javafx.util.Callback
+application.Request ..> java.sql.Date
+application.Yaccount ..> java.lang.Override
+application.Yaccount --|> javafx.application.Application
+application.Yaccount ..> javafx.fxml.FXMLLoader
+application.Yaccount ..> javafx.scene.Parent
+application.Yaccount ..> javafx.scene.Scene
+application.Yaccount ..> javafx.stage.Stage
+controller.AdminController ..> java.lang.Override
+controller.AdminController ..> javafx.fxml.FXML
+controller.AdminController ..> application.ListInterface
+controller.AdminController ..> application.Yaccount
+controller.AdminController ..> java.net.URL
+controller.AdminController ..> java.util.HashMap
+controller.AdminController ..> java.util.Map
+controller.AdminController ..> java.util.ResourceBundle
+controller.AdminController ..> javafx.event.ActionEvent
+controller.AdminController --|> javafx.fxml.Initializable
+controller.BasicController ..> java.lang.Override
+controller.BasicController ..> javafx.fxml.FXML
+controller.BasicController ..> application.ListInterface
+controller.BasicController ..> application.Request
+controller.BasicController ..> java.net.URL
+controller.BasicController ..> java.time.LocalDate
+controller.BasicController ..> java.util.HashMap
+controller.BasicController ..> java.util.Map
+controller.BasicController ..> java.util.ResourceBundle
+controller.BasicController ..> javafx.event.ActionEvent
+controller.BasicController --|> javafx.fxml.Initializable
+controller.LoginController ..> java.lang.Override
+controller.LoginController ..> javafx.fxml.FXML
+controller.LoginController ..> application.AESEncryption
+controller.LoginController ..> application.Yaccount
+controller.LoginController ..> java.net.URL
+controller.LoginController ..> java.sql.ResultSet
+controller.LoginController ..> java.sql.SQLException
+controller.LoginController ..> java.util.ResourceBundle
+controller.LoginController ..> javafx.event.ActionEvent
+controller.LoginController --|> javafx.fxml.Initializable
+controller.RegisterController ..> java.lang.Override
+controller.RegisterController ..> javafx.fxml.FXML
+controller.RegisterController ..> application.AESEncryption
+controller.RegisterController ..> application.User
+controller.RegisterController ..> application.Yaccount
+controller.RegisterController ..> java.net.URL
+controller.RegisterController ..> java.sql.ResultSet
+controller.RegisterController ..> java.util.ResourceBundle
+controller.RegisterController ..> javafx.event.ActionEvent
+controller.RegisterController --|> javafx.fxml.Initializable
+@enduml

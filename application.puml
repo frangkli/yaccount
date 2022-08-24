@@ -1,0 +1,69 @@
+@startuml
+annotation java.lang.Override
+class application.AESEncryption
+class application.ColoredCell
+class application.DatabaseHandler
+class application.ListInterface
+class application.Request
+class application.User
+class application.Yaccount
+class java.io.UnsupportedEncodingException
+class java.lang.reflect.Field
+class java.nio.charset.StandardCharsets
+class java.security.InvalidKeyException
+class java.security.MessageDigest
+class java.security.NoSuchAlgorithmException
+class java.sql.Date
+class java.util.Arrays
+class java.util.Base64
+class java.util.LinkedList
+class java.util.Queue
+class java.util.Stack
+class javafx.application.Application
+class javafx.beans.value.ChangeListener
+class javafx.beans.value.ObservableValue
+class javafx.fxml.FXMLLoader
+class javafx.scene.Parent
+class javafx.scene.Scene
+class javafx.scene.control.ListCell
+class javafx.scene.control.ListView
+class javafx.stage.Stage
+class javafx.util.Callback
+class javax.crypto.BadPaddingException
+class javax.crypto.Cipher
+class javax.crypto.IllegalBlockSizeException
+class javax.crypto.NoSuchPaddingException
+class javax.crypto.spec.SecretKeySpec
+application.AESEncryption ..> java.io.UnsupportedEncodingException
+application.AESEncryption ..> java.nio.charset.StandardCharsets
+application.AESEncryption ..> java.security.InvalidKeyException
+application.AESEncryption ..> java.security.MessageDigest
+application.AESEncryption ..> java.security.NoSuchAlgorithmException
+application.AESEncryption ..> java.util.Arrays
+application.AESEncryption ..> java.util.Base64
+application.AESEncryption ..> javax.crypto.BadPaddingException
+application.AESEncryption ..> javax.crypto.Cipher
+application.AESEncryption ..> javax.crypto.IllegalBlockSizeException
+application.AESEncryption ..> javax.crypto.NoSuchPaddingException
+application.AESEncryption ..> javax.crypto.spec.SecretKeySpec
+application.ColoredCell ..> java.lang.Override
+application.ColoredCell ..> java.util.LinkedList
+application.ColoredCell --|> javafx.scene.control.ListCell
+application.ColoredCell ..> javafx.scene.control.ListView
+application.DatabaseHandler ..> java.lang.reflect.Field
+application.ListInterface ..> java.lang.Override
+application.ListInterface ..> application.Yaccount
+application.ListInterface ..> java.util.LinkedList
+application.ListInterface ..> java.util.Queue
+application.ListInterface ..> java.util.Stack
+application.ListInterface ..> javafx.beans.value.ChangeListener
+application.ListInterface ..> javafx.beans.value.ObservableValue
+application.ListInterface ..> javafx.util.Callback
+application.Request ..> java.sql.Date
+application.Yaccount ..> java.lang.Override
+application.Yaccount --|> javafx.application.Application
+application.Yaccount ..> javafx.fxml.FXMLLoader
+application.Yaccount ..> javafx.scene.Parent
+application.Yaccount ..> javafx.scene.Scene
+application.Yaccount ..> javafx.stage.Stage
+@enduml
